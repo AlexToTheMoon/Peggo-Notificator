@@ -1,8 +1,7 @@
 # Peggo-Notificator
-## Install
+## Install and setup mail service. This case Gmail account.
 
 ```shell
-$ git clone https://github.com/blockpane/tenderduty.git
-$ cd tenderduty
-$ go build -ldflags "-s -w" -o tenderduty main.go
+sudo apt-get update && sudo apt-get upgrade \
+&& sudo apt-get install postfix
 ```
