@@ -14,7 +14,7 @@ ownEventNonce=$(go run $HOME/peggo_health_check.go | jq ."ownEventNonce")
 echo "Your EventNonce is $ownEventNonce"
 
                 if [ $heighestEventNonce -ne $ownEventNonce ]; then
-        sendmail -F Peggo -t latflat@gmail.com  < $HOME/email.txt 2> "/dev/null"
+        sendmail -F Peggo -t USERNAME@gmail.com  < $HOME/email.txt 2> "/dev/null"
 
                 echo  ">>> Notification Email was sent! <<<"
 
