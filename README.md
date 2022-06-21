@@ -5,6 +5,6 @@
 sudo apt-get update && sudo apt-get upgrade \
 && sudo apt-get install postfix
 ```
-### Features
+## Next
 
 Go to config file..
