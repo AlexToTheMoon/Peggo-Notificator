@@ -51,3 +51,9 @@ Restart Postfix to aply all changes
 ```
 sudo systemctl restart postfix
 ```
+Send test email (It can be any email, not only Gmail.) 
+```
+echo "Subject: TEST
+Test message" > test.txt \
+&& sendmail <YOUR-EMAIL>@gmail.com < test.txt 2> /dev/null
+```
