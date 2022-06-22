@@ -19,6 +19,8 @@ sudo apt-get update && sudo apt-get upgrade \
 ```
 ### Configure mail service
 Add file "sasl_passwd" to the direcoty /etc/postfix/sasl/ and set your Gmail credentials
-```echo "[smtp.gmail.com]:587 <USERNAME>@gmail.com:<GMAIL APP PASS>" > /etc/postfix/sasl/sasl_passwd```
-Should be looking something like this:
+```
+echo "[smtp.gmail.com]:587 <USERNAME>@gmail.com:<GMAIL APP PASS>" > /etc/postfix/sasl/sasl_passwd
+```
+*Should be looking something like this:*
 [smtp.gmail.com]:587 mr.neo@gmail.com:rfhgrtllsgrersae
