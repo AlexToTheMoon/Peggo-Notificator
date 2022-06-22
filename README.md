@@ -30,3 +30,8 @@ Create hash databse file with following command
 sudo postmap /etc/postfix/sasl/sasl_passwd
 ```
 After that U have to see new file /etc/postfix/sasl/**sadl_passwd.db**
+
+Open file /etc/postfix/main.cf find **relayhost** value and add: [smtp.gmail.com]:587
+```
+relayhost = [smtp.gmail.com]:587
+```
