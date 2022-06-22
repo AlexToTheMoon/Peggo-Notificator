@@ -5,9 +5,9 @@
 sudo apt-get update && sudo apt-get upgrade \
 && sudo apt-get install postfix
 ```
-**_While installation please choose_ Internet Site _option_.
+**_While installation please choose_ Internet Site _option_.**
 
-## Create Gmail App password
+# Create Gmail App password
 
 1. Go to your Google Account.
 2. On the left navigation panel, choose Security.
