@@ -1,12 +1,11 @@
 # Peggo-Notificator
-## Install and setup mail service.
+## Install mail service.
 
+While installation please choose **Internet Site** option.
 ```shell
 sudo apt-get update && sudo apt-get upgrade \
 && sudo apt-get install postfix
 ```
-While installation please choose **Internet Site** option.
-
 ### Create Gmail App password
 
 1. Go to your Google Account.
