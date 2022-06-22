@@ -22,14 +22,18 @@ Add file "sasl_passwd" to the direcoty /etc/postfix/sasl/ and set your Gmail cre
 ```
 echo "[smtp.gmail.com]:587 <USERNAME>@gmail.com:<GMAIL APP PASS>" > /etc/postfix/sasl/sasl_passwd
 ```
-Should be looking something like this: 
+
+_Should be looking something like this_ 
 > [smtp.gmail.com]:587 mr.neo@gmail.com:rfhgrtllsgrersae
+
 
 Create hash databse file with following command
 ```
 sudo postmap /etc/postfix/sasl/sasl_passwd
 ```
-After that U have to see new file /etc/postfix/sasl/**sadl_passwd.db**
+
+> _After that U have to see new file_ /etc/postfix/sasl/**sadl_passwd.db**
+
 
 Open file /etc/postfix/main.cf find **relayhost** value and add: [smtp.gmail.com]:587
 ```
