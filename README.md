@@ -8,10 +8,12 @@ sudo apt-get update && sudo apt-get upgrade \
 ```
 ### Create Gmail App password
 
-1. Go to your Google Account.
+1. Login into your Gmail, at the top right click on your acc icon an choose
+"Mnage your Google Account" 
 2. On the left navigation panel, choose Security.
-3. On the 'Signing in to Google' panel, choose App passwords. ...
-4. At the bottom, choose Select app and choose the app that you're using.
-5. Choose Select device and choose the device that you're using.
-6. Choose Generate.
+3. Setup 2-step Verification if it not active.
+4. On the 'Signing in to Google' panel, choose App passwords. ... 
+5. At the bottom, choose Select app and choose the app that you're using - Our case MAIL
+6. Choose Select device --> Other(Custom name) --> Add "External account".
+7. Choose Generate.
 
