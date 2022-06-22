@@ -24,3 +24,9 @@ echo "[smtp.gmail.com]:587 <USERNAME>@gmail.com:<GMAIL APP PASS>" > /etc/postfix
 ```
 *Should be looking something like this:* 
 > [smtp.gmail.com]:587 mr.neo@gmail.com:rfhgrtllsgrersae
+
+Create hash databse file with following command
+```
+sudo postmap /etc/postfix/sasl/sasl_passwd
+```
+After that U have to see new file "sadl_passwd.db", here:  ls /etc/postfix/sasl/
