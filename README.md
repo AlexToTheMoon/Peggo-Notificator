@@ -23,8 +23,7 @@ Add file "sasl_passwd" to the direcoty /etc/postfix/sasl/ and set your Gmail cre
 echo "[smtp.gmail.com]:587 <USERNAME>@gmail.com:<GMAIL APP PASS>" > /etc/postfix/sasl/sasl_passwd
 ```
 
->_Should be looking something like this_ 
-> [smtp.gmail.com]:587 mr.neo@gmail.com:rfhgrtllsgrersae
+>_Should be looking something like this_:  [smtp.gmail.com]:587 mr.neo@gmail.com:rfhgrtllsgrersae
 
 
 Create hash databse file with following command
