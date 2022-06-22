@@ -20,7 +20,7 @@ sudo apt-get update && sudo apt-get upgrade \
 ### Configure mail service
 Create file "sasl_passwd" to the direcoty /etc/postfix/sasl/ and set your Gmail credentials
 ```
-echo "[smtp.gmail.com]:587 <USERNAME>@gmail.com:<GMAIL APP PASS>" > /etc/postfix/sasl/sasl_passwd
+sudo echo "[smtp.gmail.com]:587 <USERNAME>@gmail.com:<GMAIL APP PASS>" > /etc/postfix/sasl/sasl_passwd
 ```
 
 >_Should be looking something like this_:  [smtp.gmail.com]:587 mr.neo@gmail.com:rfhgrtllsgrersae
@@ -40,11 +40,14 @@ relayhost = [smtp.gmail.com]:587
 ```
 Add some more settings to the end of main.cf file to enable SASL authentication.
 ```
-echo " 
+sudo echo " 
 smtp_sasl_auth_enable = yes
 smtp_sasl_security_options = noanonymous
 smtp_sasl_password_maps = hash:/etc/postfix/sasl/sasl_passwd
 smtp_tls_security_level = encrypt
 smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt" >> /etc/postfix/main.cf
 ```
-
+Restart Postfix to aply all changes
+```
+sudo systemctl restart postfix
+```
