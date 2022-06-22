@@ -38,3 +38,13 @@ Open file /etc/postfix/main.cf find **relayhost** value and add: [smtp.gmail.com
 ```
 relayhost = [smtp.gmail.com]:587
 ```
+Add some more settings to the end of main.cf file to enable SASL authentication.
+```
+echo " 
+smtp_sasl_auth_enable = yes
+smtp_sasl_security_options = noanonymous
+smtp_sasl_password_maps = hash:/etc/postfix/sasl/sasl_passwd
+smtp_tls_security_level = encrypt
+smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt" >> /etc/postfix/main.cf
+```
+
