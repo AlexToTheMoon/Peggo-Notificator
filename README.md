@@ -79,10 +79,10 @@ which U use at peggod.service file for "--cosmos-from=" parameter.
 Save changes.
 ### Run script
 ```
-apt-get install screen -y && screen -S peggo && ulimit -n 8192
+apt-get install screen -y && screen -S peggo
 ```
 ```
-sh $HOME/peggo-checker/peggo.sh
+ulimit -n 8192 && sh $HOME/peggo-checker/peggo.sh
 ```
 Use CTRL+A+D to leave the screen session
 
