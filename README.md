@@ -76,4 +76,10 @@ apt-get install screen && screen -S peggo
 ```
 sh $HOME/peggo-checker/peggo.sh
 ```
+Use CTRL+A+D to leave the screen session
 
+To get back to the script session use : 
+```
+screen -r peggo
+```
+GOOD LUCK!
