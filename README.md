@@ -79,7 +79,7 @@ which U use at peggod.service file for "--cosmos-from=" parameter.
 Save changes.
 ### Run script
 ```
-apt-get install screen -y && screen -S peggo
+apt-get install screen -y && screen -S peggo && ulimit -n 8192
 ```
 ```
 sh $HOME/peggo-checker/peggo.sh
