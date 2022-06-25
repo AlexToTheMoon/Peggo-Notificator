@@ -1,4 +1,10 @@
 # Peggo-Notificator
+**Please notice!** This is just additional notification service which **can NOT be taken as a main source of the Peggo control!**
+
+Script does just two things : 
+1. Check your sync status and send alert if it not synced. 
+2. Send alert if script not working at any reason (for example cant reach API endpoint).
+
 ## Install mail service.
 
 While installation please choose **Internet Site** option.
@@ -82,4 +88,6 @@ To get back to the script session use :
 ```
 screen -r peggo
 ```
-                                                                         GOOD LUCK!
+<p align="center">
+    GOOD LUCK
+</p>
