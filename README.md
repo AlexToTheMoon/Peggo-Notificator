@@ -9,7 +9,7 @@ Script does just two things :
 
 While installation please choose **Internet Site** option.
 ```shell
-sudo apt-get update && sudo apt-get upgrade \
+sudo apt-get update && sudo apt-get upgrade -y \
 && sudo apt-get install postfix -y
 ```
 ### Create Gmail App password
