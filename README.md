@@ -7,7 +7,9 @@ Script does just two things :
 
 ## Install mail service.
 
-While installation please choose **Internet Site** option.
+While installation please choose **Internet Site** option
+
+System mail name can be left HOSTNAME or any U wish
 ```shell
 sudo apt-get update && sudo apt-get upgrade -y \
 && sudo apt-get install postfix -y
