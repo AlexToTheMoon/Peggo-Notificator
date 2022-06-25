@@ -69,4 +69,11 @@ which U use at peggod.service file for "--cosmos-from=" parameter.
 > Example : var orchAddress = "umee1jdz5s07v9afbmjy0djsvvyldjnesfzlpdj0r6q"
 
 Save changes.
+### Run script
+```
+apt-get install screen && screen -S peggo
+```
+```
+sh $HOME/peggo-checker/peggo.sh
+```
 
