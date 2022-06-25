@@ -63,9 +63,10 @@ cd $HOME; wget https://github.com/AlexToTheMoon/Peggo-Notificator/raw/main/peggo
 && tar xvf peggo-checker.tar \
 && cd peggo-checker; rm $HOME/peggo-checker.tar
 ```
-Open file **peggo_health_check.go** with any fvorite editor
+Open file **peggo_health_check.go**
 Change value at **"var orchAddress ="** variable, to your Orchestrator key,
 which U use at peggod.service file for "--cosmos-from=" parameter.
 > Example : var orchAddress = "umee1jdz5s07v9afbmjy0djsvvyldjnesfzlpdj0r6q"
+
 Save changes.
 
