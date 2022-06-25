@@ -10,7 +10,7 @@ Script does just two things :
 While installation please choose **Internet Site** option.
 ```shell
 sudo apt-get update && sudo apt-get upgrade \
-&& sudo apt-get install postfix
+&& sudo apt-get install postfix -y
 ```
 ### Create Gmail App password
 ```
@@ -77,7 +77,7 @@ which U use at peggod.service file for "--cosmos-from=" parameter.
 Save changes.
 ### Run script
 ```
-apt-get install screen && screen -S peggo
+apt-get install screen -y && screen -S peggo
 ```
 ```
 sh $HOME/peggo-checker/peggo.sh
