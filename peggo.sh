@@ -15,11 +15,11 @@ echo "Your EventNonce is $ownEventNonce"
                                         sleep 2s
 
                 if [ -z "$heighestEventNonce" ]; then
-        sendmail -F Peggo -t latflat@gmail.com  < $HOME/peggo-checker/get-error.txt 2> "/dev/null"
+        sendmail -F Peggo -t username@gmail.com  < $HOME/peggo-checker/get-error.txt 2> "/dev/null"
                         echo  ">>> Can`t get Event Nonce! Alert was sent. <<<"
                         
                 elif [ $heighestEventNonce -ne $ownEventNonce ]; then
-        sendmail -F Peggo -t latflat@gmail.com  < $HOME/peggo-checker/sync-error.txt 2> "/dev/null"
+        sendmail -F Peggo -t username@gmail.com  < $HOME/peggo-checker/sync-error.txt 2> "/dev/null"
 
                 echo  ">>> Peggo not synced! Alert was sent! <<<"
 
