@@ -101,6 +101,8 @@ To get back to the script session use :
 ```
 screen -r peggo
 ```
+![should be looking like that](Peggo_gm.png)
+
 <p align="center">
     GOOD LUCK
 </p>
