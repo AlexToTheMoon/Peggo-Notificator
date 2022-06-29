@@ -102,7 +102,7 @@ To get back to the script session use :
 screen -r peggo
 ```
 If your Peggo is not synced, you will receive email as shown below
-![mail example](Peggo_gm.png)
+![mail example]()
 
 <p align="center">
     GOOD LUCK
