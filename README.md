@@ -5,6 +5,8 @@ Script does just two things :
 1. Check your sync status and sends alert if it not synced. 
 2. Sends alert if script not working at any reason (for example cant reach API endpoint).
 
+*If any commnets or issues U can contact me at* **Discord** - AlexeyM#5409
+
 ## Install mail service.
 
 While installation please choose **Internet Site** option
