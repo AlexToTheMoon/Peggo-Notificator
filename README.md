@@ -69,14 +69,19 @@ Test message" > test.txt \
 ```
 cd $HOME; wget https://github.com/AlexToTheMoon/Peggo-Notificator/raw/main/peggo-checker.tar \
 && tar xvf peggo-checker.tar \
-&& cd peggo-checker; rm $HOME/peggo-checker.tar
+&& cd peggo-checker && rm peggo-checker.tar
 ```
-Open file **peggo_health_check.go**
+Open file **peggo_health_check.go** 
 Change value at **"var orchAddress ="** variable, to your Orchestrator key,
 which U use at peggod.service file for "--cosmos-from=" parameter.
 > Example : var orchAddress = "umee1jdz5s07v9afbmjy0djsvvyldjnesfzlpdj0r6q"
 
 Save changes.
+
+Open file **peggo.sh** 
+Change value at **"EMAIL@gmail.com"** to Email you want to receive notifications,
+there are two places for change.
+> Example : john.smith@gmail.com (or any another email provider)
 ### Run script
 ```
 apt-get install screen -y && screen -S peggo
