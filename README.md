@@ -69,7 +69,7 @@ Test message" > test.txt \
 ```
 cd $HOME; wget https://github.com/AlexToTheMoon/Peggo-Notificator/raw/main/peggo-checker.tar \
 && tar xvf peggo-checker.tar \
-&& cd peggo-checker && rm peggo-checker.tar
+&& rm peggo-checker.tar; cd peggo-checker 
 ```
 Open file **peggo_health_check.go** 
 Change value at **"var orchAddress ="** variable, to your Orchestrator key,
