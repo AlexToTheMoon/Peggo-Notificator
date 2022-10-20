@@ -82,6 +82,10 @@ Save changes.
 
 Open file **peggo.sh** 
 Change value of **EMAIL** variable to Email you want to receive notifications (*you can use any email provider not only Gmail*).
+Example:
+> #PLEASE SET YOUR EMAIL ADDRESS BELOW
+> 
+> EMAIL="your@email.com"
 Save changes.
 
 ### Run script
