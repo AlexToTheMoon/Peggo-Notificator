@@ -2,6 +2,7 @@
 #Peggo Notificator
 
 #PLEASE SET YOUR EMAIL ADDRESS BELOW
+
 EMAIL="your@email.com"
 
 while true
