@@ -1,6 +1,9 @@
 #!/bin/bash
 #Peggo Notificator
 
+#PLEASE SET YOUR EMAIL ADDRESS BELOW
+EMAIL="your@email.com"
+
 while true
 do
         date
@@ -15,11 +18,11 @@ echo "Your EventNonce is $ownEventNonce"
                                         sleep 1s
 
                 if [ -z "$heighestEventNonce" ]; then
-                        #SET YOUR EMAIL BELOW
-        sendmail -F Peggo -t EMAIL@gmail.com  < $HOME/peggo-checker/get-error.txt 2> "/dev/null"
+                        
+        sendmail -F Peggo -t ${EMAIL}  < $HOME/peggo-checker/get-error.txt 2> "/dev/null"
                 elif [ $heighestEventNonce -ne $ownEventNonce ]; then
-                        #SET YOUR EMAIL BELOW
-        sendmail -F Peggo -t EMAIL@gmail.com  < $HOME/peggo-checker/sync-error.txt 2> "/dev/null"
+                        
+        sendmail -F Peggo -t ${EMAIL}  < $HOME/peggo-checker/sync-error.txt 2> "/dev/null"
 
                 echo  ">>> Notification Email was sent! <<<"
 
