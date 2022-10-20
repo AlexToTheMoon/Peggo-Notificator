@@ -81,13 +81,9 @@ which U use at peggod.service file for "--cosmos-from=" parameter.
 Save changes.
 
 Open file **peggo.sh** 
-Change value **"EMAIL@gmail.com"** at two places  to Email you want to receive notifications (*you can use any email provider not only Gmail*).
-
-> Example : sendmail -F Peggo -t john.smith@gmail.com  < $HOME/peggo-checker/get-error.txt 2> "/dev/null"
-> 
-> Example : sendmail -F Peggo -t john.smith@gmail.com  < $HOME/peggo-checker/sync-error.txt 2> "/dev/null"
-
+Change value of **EMAIL** variable to Email you want to receive notifications (*you can use any email provider not only Gmail*).
 Save changes.
+
 ### Run script
 ```
 apt-get install screen -y && screen -S peggo
